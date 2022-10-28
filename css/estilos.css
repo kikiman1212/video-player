@@ -1,0 +1,95 @@
+
+body{
+  background-color: darkviolet;
+}
+
+
+
+
+.wrapper{
+  max-inline-size: 900px;
+  margin: auto;
+}
+
+.player{
+  margin-block-start: 100px;
+border: 10px solid white;
+position: relative;
+}
+
+.player video{
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.player-title{
+ color: white;
+ position: absolute;
+ inset-block-start: 0;
+ inset-inline-start: 20px;
+}
+.player-actions{
+position: absolute;
+inset: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.button{
+  inline-size: 32px;
+  block-size: 32px;
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.button:active{
+  transform: scale(.9);
+}
+
+#play{
+background-image: url(../icons/icons8-circled_play\ 1.svg);
+}
+#pause{
+background-image: url(../icons/icons8-pause_button\ 1.svg);
+}
+#adelantar{
+  background-image: url(../icons/icons8-reset\ 1.svg);
+  }
+  #retroceder{
+    background-image: url(../icons/icons8-reset\ 2.svg);
+    }
+
+    .player-progreso{
+      position: absolute;
+      inset-block-end: 0;
+      inset-inline: 0;
+      display: flex;
+      padding: 10px;
+    }
+
+    .player-progreso input{
+      flex: 1;
+    }
+.player-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: .3s opacity;
+}
+
+.player:hover .player-overlay{
+  opacity: 1;
+}
+
+h2{
+color: white;
+padding: 20px;
+}
