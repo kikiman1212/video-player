@@ -89,7 +89,17 @@ background-image: url(../icons/icons8-pause_button\ 1.svg);
   opacity: 1;
 }
 
-h2{
+h1{
+display: flex;
+justify-content: center;
+align-items: center;
 color: white;
-padding: 20px;
+padding: 10px;
+}
+h2{
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+padding: 10px;
 }
