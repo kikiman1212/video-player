@@ -3,17 +3,16 @@ body{
   background-color: darkviolet;
 }
 
-
-
-
 .wrapper{
   max-inline-size: 900px;
   margin: auto;
 }
 
 .player{
-  margin-block-start: 100px;
+  margin-block-start: 20px;
 border: 10px solid white;
+border-radiux: 10px;
+border-radius: 10px;
 position: relative;
 }
 
@@ -101,4 +100,37 @@ display: flex;
 justify-content: center;
 align-items: center;
 color: white;
+}
+h3{
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+p{
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+ footer{ 
+	display: flex;
+   	justify-content:center;
+    	align-items: center;
+   	background-color: var(--primary);
+    	padding: 10px 0px;
+    	font-size: 30px;
+	margin-block: 10px;
+	
+        
+}
+
+footer img {
+   display: flex;
+   align-items: center;
+	width:30px;
+	margin-left:10px;
+   cursor: pointer;
 }
