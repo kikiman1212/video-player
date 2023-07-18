@@ -2,27 +2,23 @@
 body{
   background-color: darkviolet;
 }
-
 .wrapper{
   max-inline-size: 900px;
   margin: auto;
 }
-
 .player{
   margin-block-start: 20px;
 border: 10px solid white;
-border-radiux: 10px;
-border-radius: 10px;
+border-radius: 30px;
 position: relative;
 }
-
 .player video{
   inline-size: 100%;
   aspect-ratio: 16/9;
   vertical-align: middle;
   object-fit: cover;
+    border-radius: 20px;
 }
-
 .player-title{
  color: white;
  position: absolute;
@@ -37,7 +33,6 @@ justify-content: center;
 align-items: center;
 gap: 20px;
 }
-
 .button{
   inline-size: 32px;
   block-size: 32px;
@@ -48,11 +43,9 @@ gap: 20px;
   background-position: center;
   cursor: pointer;
 }
-
 .button:active{
   transform: scale(.9);
 }
-
 #play{
 background-image: url(../icons/icons8-circled_play\ 1.svg);
 color: darkviolet;
@@ -62,33 +55,43 @@ background-image: url(../icons/icons8-pause_button\ 1.svg);
 }
 #adelantar{
   background-image: url(../icons/icons8-reset\ 1.svg);
-  }
+}
   #retroceder{
     background-image: url(../icons/icons8-reset\ 2.svg);
-    }
-
+}
     .player-progreso{
       position: absolute;
       inset-block-end: 0;
       inset-inline: 0;
       display: flex;
       padding: 10px;
-    }
-
+}
     .player-progreso input{
       flex: 1;
-    }
+}
 .player-overlay {
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: .3s opacity;
 }
-
 .player:hover .player-overlay{
   opacity: 1;
 }
 
+video{
+  border: 10px;
+}
+.img1{
+  width:100px;
+  margin-bottom: -24px;
+  margin-left: 400px;
+}
+.img2{
+  width:80px;
+  margin-bottom: ;
+  margin-left: 630px;
+}
 h1{
 display: flex;
 justify-content: center;
@@ -107,14 +110,12 @@ justify-content: center;
 align-items: center;
 color: white;
 }
-
 p{
 display: flex;
 justify-content: center;
 align-items: center;
 color: white;
 }
-
  footer{ 
 	display: flex;
    	justify-content:center;
@@ -122,15 +123,42 @@ color: white;
    	background-color: var(--primary);
     	padding: 10px 0px;
     	font-size: 30px;
-	margin-block: 10px;
-	
-        
+	margin-block: 10px;       
 }
-
 footer img {
    display: flex;
    align-items: center;
 	width:30px;
 	margin-left:10px;
    cursor: pointer;
+}
+
+@media (max-width:500px){
+  .img1{
+  width:80px;
+  margin-bottom: -24px;
+  margin-left: 200px;
+}
+.img2{
+  width:40px;
+  margin-bottom: ;
+  margin-left: 220px ;
+}
+
+
+}
+
+@media (max-width:400px){
+  .img1{
+  width:80px;
+  margin-bottom: -24px;
+  margin-left: 150px;
+}
+.img2{
+  width:40px;
+  margin-bottom: ;
+  margin-left: 170px ;
+}
+
+
 }
