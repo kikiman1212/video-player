@@ -90,7 +90,12 @@ video{
 .img2{
   width:80px;
   margin-bottom: ;
-  margin-left: 630px;
+  margin-left: 1px;
+}
+.img3{
+  width:100px;
+  margin-bottom: ;
+  margin-left: 10px;
 }
 h1{
 display: flex;
@@ -128,10 +133,21 @@ color: white;
 footer img {
    display: flex;
    align-items: center;
-	width:30px;
-	margin-left:10px;
+   width:30px;
+   margin-left:15px;
    cursor: pointer;
+   opacity: 1;
 }
+
+footer img:hover{
+  border-radius:5px;
+  background:#fff;
+  width:40px;
+  opacity: 0.8;
+
+
+}
+
 
 @media (max-width:500px){
   .img1{
@@ -140,15 +156,23 @@ footer img {
   margin-left: 200px;
 }
 .img2{
-  width:40px;
+  width:30px;
   margin-bottom: ;
-  margin-left: 220px ;
+  margin-left: 10px ;
 }
-
+.img3{
+  width:80px;
+  margin-bottom: ;
+  margin-left: 5px ;
+}
 
 }
 
 @media (max-width:400px){
+
+footer{
+  font-size:20px;
+}
   .img1{
   width:80px;
   margin-bottom: -24px;
@@ -157,11 +181,12 @@ footer img {
 .img2{
   width:40px;
   margin-bottom: ;
-  margin-left: 170px ;
+  margin-left: 10px ;
 }
-footer{
-font-size: 20px;
+.img3{
+  width:40px;
+  margin-bottom: ;
+  margin-left: 5px ;
 }
-
 
 }
